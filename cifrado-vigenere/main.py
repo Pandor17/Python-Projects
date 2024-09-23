@@ -30,7 +30,11 @@ def encrypt(message: str, key: str) -> str:
 def decrypt(message: str, key: str) -> str:
     return vigenere(message, key, -1)
 
-print(f'\nEncrypted text: {text}')
-print(f'Key: {custom_key}')
-decryption = decrypt(text, custom_key)
-print(f'\nDecrypted text: {decryption}\n')
+def main():
+    print(f'\nEncrypted text: {text}')
+    print(f'Key: {custom_key}')
+    decryption = decrypt(text, custom_key)
+    print(f'\nDecrypted text: {decryption}\n')
+
+if __name__ == '__main__':
+    main()   

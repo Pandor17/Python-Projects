@@ -33,4 +33,8 @@ def shortest_path(graph: dict, start:str, target: str = ''):
     
     return distances, paths
     
-shortest_path(my_graph, 'A', 'F')
+def main():
+    shortest_path(my_graph, 'A', 'F')
+
+if __name__ == '__main__':
+    main()   
