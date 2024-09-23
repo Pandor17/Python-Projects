@@ -39,5 +39,9 @@ def generate_password(length: int = 16,
     
     return password
     
-new_password = generate_password()
-print('Generated password:' + new_password)
+def main():
+    new_password = generate_password()
+    print('Generated password:' + new_password)
+
+if __name__ == '__main__':
+    main()   
